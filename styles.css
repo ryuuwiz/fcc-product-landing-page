@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(220, 38, 38);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+#header #logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header #logo-wrapper #header-img {
+  width: 80px;
+}
+#header #logo-wrapper #logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #eaeaea;
+}
+#header #nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#header #nav-bar .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+  color: #eaeaea;
+}
+#header #nav-bar .nav-link:hover {
+  color: rgba(238, 238, 170, 0.6666666667);
+}
+
+main {
+  padding: 0.5rem;
+  margin: 12rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main #featured,
+main #pricing,
+main #contact {
+  margin: 2rem 0;
+}
+main #title {
+  display: none;
+}
+main #featured #video {
+  width: 100%;
+  height: 400px;
+}
+main #pricing {
+  text-align: center;
+}
+main #pricing #pricing-title {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+main #pricing #box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #pricing #box-container #box {
+  width: 18rem;
+  height: 22rem;
+  background-color: rgb(220, 38, 38);
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+main #pricing #box-container #box:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.8s ease;
+  cursor: pointer;
+  background-color: rgb(127, 29, 29);
+}
+main #pricing #box-container #box #box-image {
+  margin: 2rem 0;
+  width: 150px;
+  height: 150px;
+}
+main #pricing #box-container #box #box-title {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #eaeaea;
+}
+main #pricing #box-container #box #box-price {
+  margin: 0 auto;
+  width: 10rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+main #contact {
+  padding: 1rem;
+}
+main #contact #form {
+  display: flex;
+  flex-direction: column;
+}
+main #contact #form #email {
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+main #contact #form #submit {
+  margin-top: 0.5rem;
+  background-color: rgb(220, 38, 38);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  color: #eaeaea;
+}
+main #contact #form #submit:hover {
+  background-color: rgb(127, 29, 29);
+  transition: all 1s ease;
+}
+
+footer {
+  background-color: rgb(220, 38, 38);
+  padding: 1.5rem;
+  text-align: center;
+}
+footer a,
+footer p {
+  color: #eaeaea;
+}
+
+@media only screen and (min-width: 768px) {
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #header #nav-bar {
+    width: auto;
+  }
+  main {
+    max-width: 768px;
+    margin: 12rem auto;
+  }
+  main #pricing #box-container {
+    flex-direction: row;
+  }
+  main #contact {
+    padding: 4rem 8rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
